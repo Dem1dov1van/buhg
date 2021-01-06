@@ -8,52 +8,77 @@
 </head>
 <body class="body">
     <header class="body__header header">
-        <img src="#" alt="logo">
-        <h2>BuhOne</h2>
-        <div class="header__offer offer">
-            <div class="offer__item item">
-                <img src="#" alt="miniImg" class="item__icon-phone">
-                <p class="phone">8 (111) 222-33-44</p>
-            </div>
-            <div class="offer__item item">
-                <img src="#" alt="miniImg" class="item__icon-clock">
-                <p class="workingTime">Пн-Пт 10:00-18:00</p>
-            </div>
-            <div class="offer__item item">
-                <img src="#" alt="miniImg" class="item__icon-mail">
-                <p class="mail">order@buhone.ru</p>
-            </div>
-            <div class="offer__item item">
-                <img src="#" alt="miniImg" class="item__icon-location">
-                <p class="location">Невский пр. 130</p>
-            </div>
+        <div class="header__logo logo">
+            <a href="#" class="logo__homeLink">
+                <img src="#" alt="logo">
+            </a>
         </div>
-        <div class="header__menu menu">
-            <ul class="menu__list list">
-                <li class="list__item item">
-                    <a href="#" class="services">услуги</a>    
+        <ul class="header__main-list main-list">
+            <li class="main-list__item">
+                <img src="#" alt="miniImg" class="item__icon-phone">
+                <a href="tel:+71112223344" class="item__phone item__phone">8 (111) 222-33-44</a>
+            </li>
+            <li class="main-list__item">
+                <img src="#" alt="miniImg" class="item__icon-clock">
+                <a class="item__workingTime">Пн-Пт 10:00-18:00</a>
+            </li>
+            <li class="main-list__item">
+                <img src="#" alt="miniImg" class="item__icon-mail">
+                <a class="item__mail">order@buhone.ru</a>
+            </li>
+            <li class="main-list__item">
+                <img src="#" alt="miniImg" class="item__icon-location">
+                <a class="item__location">Невский пр. 130</a>
+            </li>
+        </ul>
+        <nav class="header__main-navigation main-navigation">
+            <ul class="main-navigation__main-list main-list">
+                <li class="list__item">
+                    <a href="#" class="item__mainPage">главная</a>    
                 </li>
-                <li class="list__item item">
-                    <a href="#" class="cases">кейсы</a>    
+                <li class="list__item">
+                    <a href="#" class="item__services">услуги</a>    
                 </li>
-                <li class="list__item item">
-                    <a href="#" class="aboutCompany">о компании</a>    
+                <li class="list__item">
+                    <a href="#" class="item__cases">кейсы</a>    
                 </li>
-                <li class="list__item item">
-                    <a href="#" class="contacts">контакты</a>    
+                <li class="list__item">
+                    <a href="#" class="item__aboutCompany">о компании</a>    
+                </li>
+                <li class="list__item">
+                    <a href="#" class="item__contacts">контакты</a>    
                 </li>
             </ul>
+        </nav>
+        <div class="header__slider slider">
+            <div class="slider__slide slide">
+                <div class="slide__main-offer main-offer">
+                    <h1 class="main-offer__title title"> Бухгалтерские услуги в Санкт-Петербурге</h1>
+                    <a href="#" class="main-offer__button button">Наша презентация</a>
+                </div>
+            </div>
+            <div class="slider__slide slide">
+                <div class="slide__main-offer main-offer">
+                    <h1 class="main-offer__title title"> Бухгалтерские услуги в Санкт-Петербурге</h1>
+                    <a href="#" class="main-offer__button button">Наша презентация</a>
+                </div>
+            </div>
+            <div class="slider__slide slide">
+                <div class="slide__main-offer main-offer">
+                    <h1 class="main-offer__title title"> Бухгалтерские услуги в Санкт-Петербурге</h1>
+                    <a href="#" class="main-offer__button button">Наша презентация</a>
+                </div>
+            </div>
         </div>
+
     </header>
-    <section class="body__sectionHero sectionHero">
-        <h1 class="sectionHero__title title"> Бухгалтерские услуги в Санкт-Петербурге</h1>
-        <a href="#" class="sectionHero__button button">Наша презентация</a>
+    <section class="body__section-hero section-hero">
+
     </section>
-    <!-- насколько верно использовать такие классы? -->
-    <section class="body__sectionSpecializations sectionSpecializations">
+    <section class="body__section-specializations section-specializations">
         <!-- второй вариант: class='body__specializations specializations' -->
-        <p class="sectionSpecializations__tagline tagline">наши услуги</p>
-        <h2 class="sectionSpecializations__caption caption">Мы специализируемся</h2>
+        <p class="section-specializations__tagline tagline">наши услуги</p>
+        <h2 class="section-specializations__caption caption">Мы специализируемся</h2>
         <div class="sectionSpecializations__box box">
             <div class="box__item item">
                 <p>Бухгалтерское обслуживание</p>
@@ -78,8 +103,8 @@
             </div>
         </div>
     </section>
-    <section class="body__sectionAboutUs sectionAboutUs">
-        <div class="sectionAboutUs__wrapper wrapper">
+    <section class="body__section-about section-about">
+        <div class="section-about__wrapper wrapper">
             <p class="wrapper__tagline tagline">о нас</p>
             <h2 class="wrapper__caption caption">Компания ИвановПром</h2>
             <p class="caption__text">
@@ -137,20 +162,20 @@
             </div>
         </div>
     </section>
-    <section class="body__sectionClients sectionClients">
-        <p class="sectionClients__tagline tagline">
+    <section class="body__section-clients section-clients">
+        <p class="section-clients__tagline tagline">
             Наши клиенты
         </p>
-        <h2 class="sectionClients__caption caption">
+        <h2 class="section-clients__caption caption">
             С нами работают
         </h2>
-        <div class="sectionClients__slider">
+        <div class="section-clients__slider">
             тут будет он
         </div>
     </section>
-    <section class="body__sectionReviews sectionReviews">
-        <p class="sectionReviews__tagline tagline">Отзывы</p>
-        <h2 class="sectionReviews__caption caption">Ваши благодарности</h2>
+    <section class="body__section-reviews section-reviews">
+        <p class="section-reviews__tagline tagline">Отзывы</p>
+        <h2 class="section-reviews__caption caption">Ваши благодарности</h2>
         <div class="slider">
             <div class="slider__slide">
                 <p class="slide__text">
@@ -166,11 +191,11 @@
         <!-- много слайдов...Вопрос: Везде в <ul> <div.slider> и тд есть елементы с классом .item - не возникнут ли 
         потом проблемы с присвоением стилей?(здесь вместо .item я поставил .slide, как и в .cards)  -->
     </section>
-    <section class="body__sectionContacts sectionContacts">
-        <div class="sectionContacts__wrapper wrapper">
-            <h2 class="sectionContacts__title title"> связь с нами</h2>
-            <p class="sectionContacts__text"> У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</p>
-            <div class="sectionContacts__wrap wrap">
+    <section class="body__section-contacts section-contacts">
+        <div class="section-contacts__wrapper wrapper">
+            <h2 class="section-contacts__title title"> связь с нами</h2>
+            <p class="section-contacts__text"> У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</p>
+            <div class="section-contacts__wrap wrap">
                 <div class="wrap__item item">
                     <img src="#" alt="miniImg" class="item__icon-phone">
                     <p class="phone">8 (111) 222-33-44</p>
@@ -208,4 +233,3 @@
     <script src="./js/main.js"></script>
 </body>
 </html>
-<!-- есть еще одна мысля по поводу структуры, поэтому если это полный ккал - скажи, я переделаю -->
